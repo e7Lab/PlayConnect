@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+/* Navigation */
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*main content*/
+main{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/indie\ games.webp);
+    width: 100%;
+}
+
+/*sections*/
+
+section {
+    text-align: center;
+    align-items: center;
+    max-width: 1200px; /* Define um tamanho máximo */
+    width: 90%; /* Permite que a largura se ajuste dinamicamente */
+    margin: 20px auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*footer*/
+footer {
+    background-color: #1f1f1f;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e03e00;
+}
+
+
+
+@media (max-width: 1200px) {
+    section {
+        max-width: 95%;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+}
