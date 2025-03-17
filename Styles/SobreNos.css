@@ -1,0 +1,117 @@
+/* Seção Sobre Nós */
+.SobreNos {
+    padding: 60px 20px;
+    background: var(--color-card);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    margin: 40px auto;
+    width: 80%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.SobreNos h1 {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+    from { text-shadow: 0px 0px 5px var(--color-primary); }
+    to { text-shadow: 0px 0px 15px var(--color-secondary); }
+}
+
+/* Animação FadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Seção Criadores */
+.criadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+/* Cards Animados */
+.card {
+    background: rgba(31, 31, 31, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 106, 0, 0.5);
+    width: 250px;
+    text-align: center;
+    transition: var(--transition-speed);
+    position: relative;
+    overflow: hidden;
+    animation: floatUp 0.8s ease-in-out;
+}
+
+/* Animação ao Aparecer */
+@keyframes floatUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 106, 0, 0.8);
+}
+
+/* Efeito de Brilho no Hover */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: var(--transition-speed);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    color: var(--color-primary);
+    margin: 10px 0;
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-bold);
+    transition: color var(--transition-speed);
+}
+
+.card:hover h3 {
+    color: var(--color-secondary);
+}

@@ -1,0 +1,172 @@
+:root {
+    --font-family: 'roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-title: 24px;
+    --font-size-subtitle: 20px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    
+    --color-primary: #ff6a00;
+    --color-secondary: #ee0979;
+    --color-text: #ffffff;
+    --color-background: #121212;
+    --color-card: rgba(31, 31, 31, 0.9);
+    --color-input: #222;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+h1 {
+    margin: 0;
+    font-size: var(--font-size-title);
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: var(--font-weight-bold);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: var(--color-card);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    background: var(--color-primary);
+    color: var(--color-background);
+    box-shadow: 0px 0px 10px rgba(255, 106, 0, 0.8);
+}
+
+
+/* Corpo Principal */
+main {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(/PlayConnect/images/indie\ games.webp);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--color-card);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    color: var(--color-text);
+}
+
+/* Listas */
+ol, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*media querry*/
+@media (max-width: 1200px) {
+    section {
+        max-width: 95%;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        background: rgba(31, 31, 31, 0.9);
+        box-shadow: 0px 4px 8px rgba(255, 106, 0, 0.7);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 428px) {
+    main {
+        height: auto;
+        min-height: 100vh;
+        padding: 15px;
+        background-size: contain;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        background: rgba(31, 31, 31, 0.9);
+        box-shadow: 0px 4px 8px rgba(255, 106, 0, 0.7);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        width: 100%;
+        padding: 15px;
+        max-width: 95%;
+    }
+}
