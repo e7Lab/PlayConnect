@@ -37,3 +37,4 @@ Dúvidas ou sugestões? Envie um e-mail para: **playconnectcommunity@gmail.com**
 ---
 ⚙️ **Próximos Passos:** Melhorar a UI, adicionar novas páginas e funcionalidades!
 
+Teste de alteração
