@@ -1,0 +1,96 @@
+.success-header {
+    display: flex;
+    justify-content: center;
+    background: var(--color-card);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .success-header h1 {
+    color: var(--color-primary);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+  }
+  
+  
+  .playconnect-section {
+    background-color: var(--color-card);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 0.6s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .playconnect-section h2 {
+    color: var(--color-primary);
+    font-size: var(--font-size-title);
+    margin-bottom: 15px;
+  }
+  
+  .playconnect-section p {
+    font-size: var(--font-size-base);
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+  
+  .button {
+    background: var(--color-primary);
+    color: var(--color-text);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    transition: background 0.3s ease;
+    display: inline-block;
+  }
+  
+  .button:hover {
+    background: var(--color-secondary);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .playconnect-section {
+      padding: 30px 20px;
+    }
+  
+    .playconnect-section h2 {
+      font-size: 20px;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .playconnect-section {
+      padding: 20px 15px;
+    }
+  
+    .success-header h1 {
+      font-size: 20px;
+    }
+  
+    .playconnect-section p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .playconnect-section h2 {
+      font-size: 18px;
+    }
+  
+    .button {
+      font-size: 14px;
+    }
+  }
