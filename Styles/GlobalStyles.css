@@ -80,7 +80,7 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url(/assets/images/indie\ games.webp);
+    background-image: url(./images/indie\ games.webp);
 }
 
 /* Rodapé */
