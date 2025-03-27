@@ -6,7 +6,7 @@ O **PlayConnect** é um marketplace que conecta **desenvolvedores indie** e **st
 ## Tecnologias Utilizadas
 - **HTML5**
 - **CSS3**
-- **JavaScript** (futuro)
+- **JavaScript** 
 
 ## Estrutura do Projeto
 ```
